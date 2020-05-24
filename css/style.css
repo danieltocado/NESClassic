@@ -1,0 +1,424 @@
+
+/* --- ELEMENTOS */
+
+@font-face {
+    font-family: 'SNESitalic';
+    src: url('/fonts/SNESItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Pretendo';
+    src: url('/fonts/Pretendo.ttf');
+}
+
+body {
+    background-color: #141c24;
+    display: flex;
+    justify-content: center;
+    
+}
+
+p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+}
+
+/* --- ID */
+
+#container {
+    width: 83em;
+    height: 53em;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* --- CLASES */
+
+
+
+.logo-nintendo {
+    display: flex;
+    justify-content: flex-end;
+    
+    width: 570px;
+    
+}
+
+.nintendo {
+    border: 2px solid rgba(41, 41, 41, 0.3);
+    
+    margin-right: 25px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-family: 'Pretendo', sans-serif;
+    padding: 3px;
+    color: #cdccda;
+    text-shadow: 1px 1px #928ea3;
+    letter-spacing: 1px;
+    
+}
+
+/* Carcasa */
+
+.carcasa-exterior {
+    width: 570px;
+    height: 700px;
+    background-color: #cdccda;
+    border: 1px;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.carcasa {
+    height: 700px;
+    width: 570px;
+    background-color: #cdccda;
+    box-shadow: 0px 69px 25px -29px rgba(0,0,0,0.75), 0px -10px 5px 0px rgba(255,255,255,0.50);
+    border-radius: 5px;
+
+}
+
+/* Cartucho */
+
+.carcasa-cartucho {
+    width: 570px;
+    height: 200px;
+    background-color: #bcbbcb;
+    border-radius: 3px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.50), 0px -10px 5px 0px rgba(255,255,255,0.50);
+    
+
+}
+
+.cartucho-entero {
+    
+    width: 430px;
+    height: 200px;
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    border-right: 3px groove #b9b7c5;
+    border-left: 3px groove #b9b7c5;
+}
+
+.cartucho-vacio {
+    background-color: #bcbbcb;
+    width: 430px;
+    height: 64px;
+    position: relative;
+    border-bottom: 3px groove #b9b7c5;
+    
+}
+
+.cartucho {
+    background-color: #bcbbcb;
+    width: 430px;
+    height: 64px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#subcartucho {
+    width: 280px;
+    height: 65px;
+    background-color: #bcbbcb;
+    position: absolute;
+    border-right: 2px groove #b9b7c5;
+    border-left: 2px groove #b9b7c5;
+}
+
+.logo-super {
+    background-color: #bcbbcb;
+    width: 430px;
+    height: 65px;
+    margin-top: 65px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-top: 3px groove #b9b7c5;
+    
+    
+}
+
+.logo-super img {
+    height: 40px;
+    margin-left: 20px;
+    color: #928ea3;
+}
+
+/* Botones */
+
+.carcasa-botones {
+    display: flex;
+    justify-content: center;
+    background-color: #cdccda;
+    border-radius: 5px;
+}
+
+
+
+/* Botones - Power */
+
+.power{
+    display: flex;
+    justify-content: center;
+    box-shadow: -9px -10px 5px 0px rgba(255,255,255,0.50);
+    border-right: 1px solid gray;
+    
+}
+
+.carcasa-power {
+    background-color: #bcbbcb;
+    width: 150px;
+    height: 320px;
+    
+    
+   
+}
+
+.boton-power {
+	background-color:#4f3195;
+	border-radius:6px;
+	border:1px;
+	
+	cursor:pointer;
+	
+	text-decoration:none;
+	
+    height: 60px;
+    width: 190px;
+    position: absolute;
+    margin-top: 40px;
+    
+    
+    box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.75);
+
+    
+}
+
+.boton-power input {
+    background:linear-gradient(to bottom, #2f1866 5%, #8870c8 100%);
+	background-color:#2f1866;
+	border-radius:28px;
+	border:1px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+    padding:12px 62px;
+
+    width: 170px;
+    margin-top: 7px;
+    margin-left: 10px;
+
+    font-family: 'SNESitalic', sans-serif;
+    letter-spacing: 4px;
+    opacity: 80%;
+    position: absolute;
+	
+}
+
+.boton-power input:active {
+	position:relative;
+    top:1px;
+    text-decoration: none;
+}
+
+.boton-power input:focus {
+	outline: 0;
+}
+
+
+/* Botones - Eject */
+
+.boton-eject {
+    
+    width: 115px;
+    height: 200px;
+    margin-top: 40px;
+    border: 1px groove #787686;
+    
+    
+}
+
+.boton-eject button {
+    height: 200px;
+    width: 115px;
+    background-color: #928ea3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 160px;
+    border: 1px;
+    cursor: pointer;
+    
+    font-size: 20px;
+    font-family: 'SNESitalic', sans-serif;
+    letter-spacing: 4px;
+
+
+    
+}
+
+.boton-eject button:active {
+    position:relative;
+	bottom:1px;
+}
+
+.boton-eject button:focus {
+    outline:0;
+}
+
+/* Botones - Reset */
+
+.reset{
+    display: flex;
+    justify-content: center;
+    box-shadow: 9px -10px 5px 0px rgba(255,255,255,0.50);
+    border-left: 1px solid gray;
+    margin-right: 60px;
+    
+}
+
+.carcasa-reset {
+    background-color: #bcbbcb;
+    width: 150px;
+    height: 320px;
+    
+    
+}
+
+.boton-reset {
+	background-color:#4f3195;
+	border-radius:6px;
+	border:1px;
+	
+	cursor:pointer;
+	
+	text-decoration:none;
+	
+    height: 60px;
+    width: 190px;
+    position: absolute;
+    margin-top: 40px;
+    
+    box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.75);
+
+    
+}
+
+.boton-reset input {
+    background:linear-gradient(to bottom, #2f1866 5%, #8870c8 100%);
+	background-color:#2f1866;
+	border-radius:28px;
+	border:1px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+    padding:12px 62px;
+
+    width: 170px;
+    margin-top: 7px;
+    margin-left: 10px;
+
+    font-family: 'SNESitalic', sans-serif;
+    letter-spacing: 4px;
+    opacity: 80%;
+    
+	
+}
+
+.boton-reset input:active {
+	position:relative;
+	top:1px;
+}
+
+.boton-reset input:focus {
+	outline: 0;
+}
+
+
+
+
+/* Panel */
+
+.paneles {
+    display: flex;
+    flex-direction: column;
+    font-family: 'SNESitalic', sans-serif;
+    letter-spacing: 2px;
+    
+}
+
+.panel {
+    display: flex;
+    width: 40px;
+    height: 16px;
+    margin-top: 50px;
+    margin-right: 20px;
+    
+}
+
+.panel2 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+   
+    margin-right: 20px;
+    
+}
+
+.on {
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 11px;
+    
+    color: #cdccda;
+    text-shadow: 1px 1px #928ea3;
+    
+}
+
+#luz1 {
+    width: 7px;
+    height: 7px;
+    margin-top: 5px;
+    margin-left: 30px;
+    background-color: #928ea3;
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: inset 1px 1px 2px 0;
+}
+
+#luz2 {
+    width: 7px;
+    height: 7px;
+    margin-top: 5px;
+    margin-left: 30px;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: inset 1px 1px 2px 0;
+}
+
+.off {
+    font-size: 12px;
+   
+   
+    
+    background: green;
+}
+
